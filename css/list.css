@@ -1,0 +1,53 @@
+.listheading{
+    padding: 1vw;
+    margin: 2vw 2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: min(6vw, 3em);
+    background-color: #fdffb6;
+    border-radius: 3vw;
+    box-shadow: 0 0 1vw black inset;
+    text-align: center;
+    margin-bottom: 0;
+}
+.listcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 3vw;
+    justify-content: space-evenly;
+    
+   
+}
+.listcontent{
+    margin: 1vw;
+    height:max(25vw,100px);
+    padding: 0.1%;
+    align-items: center;
+    
+    border: 0.2vw solid black;
+    background-color: antiquewhite;
+    box-shadow: 0 0 1vw black;
+    text-align: center;
+}
+.listcontent:hover{
+    cursor: pointer;
+    border: 0.2vw solid white;
+    box-shadow: 0 0 1vw black;
+    
+}
+.listcontent img{
+    margin: 0.5vw;
+    height:80%;
+    aspect-ratio: 1;
+    background-color: white;
+    border: 0.2vw solid #f3ad5e;
+}
+.listcontent>p{
+    text-align: center;
+    height: 10%;
+    margin: 0;
+    font-weight: bold;
+    font-size: min(2vw,22px);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

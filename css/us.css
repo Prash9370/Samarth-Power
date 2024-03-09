@@ -1,0 +1,39 @@
+.about-container {
+    margin: 0 1vw;
+    padding: 10px;
+}
+
+.header {
+    text-align: center;
+    font-size: max(24px,3vw);
+    margin-bottom: 2vw;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.content {
+    text-align: justify;
+    line-height: 1;
+    font-size: max(12px,3vw);
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    border: 0.5vw solid black;
+    border-radius: 1vw;
+    padding: 1vw;
+    background-color: antiquewhite;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+.pointer{
+    cursor:pointer;
+}
+.center{
+    text-align: center;
+}
+.m1{
+    margin: max(1vw,16px);
+}
+.hov:hover{
+    color:rgb(129, 129, 129);
+}

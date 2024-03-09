@@ -1,0 +1,29 @@
+.sparecontainer{
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    font-weight: bolder;
+}
+.notice{
+    font-size: 5vw;
+}
+.callbtn{
+    background-color: #ffe6a7;
+    display: inline-block;
+    width: max(100px,min(50vw,300px));
+    aspect-ratio: 2;
+    border-radius: 15vw;
+    line-height: max(50px,min(25vw,150px));
+    font-size: max(20px,min(10vw,60px));
+   
+    box-shadow: 0 max(4px,min(2vw,12px)) black;
+    text-shadow: 0 0.5vw white;
+}
+.callbtn:hover{
+    cursor: pointer;
+    transform: translateY(max(2px,min(1vw,6px)));
+    box-shadow: 0 max(2px,min(1vw,6px)) black;
+}
+.callbtn:active{
+    transform: translateY(max(3px,min(1.5vw,9px)));
+    box-shadow: 0 max(1px,min(0.5vw,3px)) black;
+}

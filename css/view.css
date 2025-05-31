@@ -1,0 +1,92 @@
+
+.namecontainer{
+    text-align: center;
+    
+}
+#mname{
+    background-color: rgb(244, 125, 125);
+    width: fit-content;
+    margin: auto;
+    padding: 1vw 3vw;
+    border-radius: 50vw;
+    font-size: min(5vw,2em);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 1vh;
+
+}
+.topflex{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width:100%;
+    min-height:300px;
+    align-items: center;
+}
+.imgcontainer{
+    background-color:none;
+    width:min(100vw, 500px);
+    aspect-ratio: 0.9;
+    margin:10px;
+    text-align: center;
+
+}
+#mainimg{
+    margin: 5%;
+    border: rgb(0, 94, 0) solid 0.5vw;
+    border-radius: 5%;
+    width:90%;
+    aspect-ratio: 1;
+    background-color: white;
+    box-shadow: 0 0 1vw 0.5vw black;
+    padding: 0.5vw;
+}
+.spareimgs{
+    background-color: white;
+    border: black solid 2px;
+    border-radius: 5%;
+    width:16%;
+    aspect-ratio: 1;
+    box-shadow: 0 0 1vw  black;
+}
+.spareimgs:hover{
+    box-shadow: 0 0 4px 2px white;
+    cursor: pointer;
+    border: red solid 2px;
+}
+.vdocontainer{
+    width:min(95%,900px);
+}
+#demovdo{
+    margin: 1vw auto 1vw auto;
+    display: block;
+    width:95%;
+    aspect-ratio: 1.78;
+}
+main>data>section>div>p{
+    text-align: center;
+    background-color: #f9dc5c;
+    margin: auto 1.5vw;
+    padding: 1vw 3vw;
+    border-radius: 50vw;
+    font-size: min(5vw,2em);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 1vh;
+}
+
+table{
+    margin:auto;
+    margin-top: 2vw;
+    font-size: max(min(2vw,3em),1em);
+    background-color: #fbf9ff;
+}
+td{
+    width: min(40vw, 400px);
+    text-align: center;
+}
+td button{
+    font-size: max(min(1.5vw,2em),1em);
+    font-weight: bold;
+    background-color: #f9a85c;
+    cursor: pointer;
+}

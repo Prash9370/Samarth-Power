@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/hmpg.css" class="styles" id="hmpgcss">
+    <link rel="stylesheet" href="./css/view.css" class="styles" id="viewcss">
+    <link rel="stylesheet" href="./css/list.css" class="styles" id="listcss">
+    <link rel="stylesheet" href="./css/spare.css" class="styles" id="sparecss">
+    <link rel="stylesheet" href="./css/service.css" class="styles" id="servicecss">
+    <link rel="stylesheet" href="./css/us.css" class="styles" id="uscss">
+    <link rel="stylesheet" href="./css/offer.css" class="styles" id="offercss">
+    <link rel="stylesheet" href="./css/download.css" class="styles" id="downloadcss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&display=swap" rel="stylesheet">
+    <script src="./javascript/main.js"></script>
+    <script src="./javascript/view.js"></script>
+    <script src="./javascript/pages.js"></script>
+    <title>Samarth Power</title>
+</head>
+
+<body id="body">
+    <header>
+
+        <div class="head" id="top">
+            <img src="./imgs/samarthpower.png" alt="Samarth logo" class="logo">
+            <span class="heading">Samarth Power <div class="branch">Tirthpuri, Ambad</div></span>
+
+            <div class="topbarRightContent">
+                <a href="#" class="abt" onclick="loaduspg('about')">About</a>
+                <a href="#" class="cnt" onclick="loaduspg('contact')">Contact</a>
+                <br>
+                <img src="./imgs/eaclogo.png" alt="E-AgroCare Logo" onclick="visitinnewtab('https://www.eagrocareindia.com/')">
+            </div>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <img src="./icons/menu.png" alt="menu" class="menu" onclick="dd()">
+                <ul class="dropdown">
+                    <li class="dd" onclick="loadhomepg(),dd()">Home</li>
+                    <li class="dd" onclick="loadlistpg('weeder',1),dd()">Power Weeders</li>
+                    <li class="dd" onclick="loadlistpg('tiller',1),dd()">Rear Tillers</li>
+                    <li class="dd" onclick="loadlistpg('attachment',2),dd()">Weeder Accessories</li>
+                    <li class="dd" onclick="loadlistpg('tool',3),visit('#BC'),dd()">BrushCutters</li>
+                    <li class="dd" onclick="loadlistpg('tool',3),visit('#EA'),dd()">Earth Augers</li>
+                    <li class="dd" onclick="loadsparepg(),dd()">Engine Spares</li>
+                    <li class="dd" onclick="loadsparepg(),dd()">GearBox Spares</li>
+                    <hr>
+                    <li class="dd" onclick="loadofferpg(),dd()">New Offers</li>
+                    <li class="dd" onclick="loaduspg('about'),dd()">About Us</li>
+                    <li class="dd" onclick="loaduspg('contact'),dd()">Contact Us</li>
+                </ul>
+                <li class="navitem" onclick="loadhomepg()">Home</li>
+                <li class="navitem">Weeders ˅
+                    <ul class="ddlist">
+                        <li class="dditem" onclick="loadviewpg('732DB',1)">Shaurya 732 (10HP)</li>
+                        <li class="dditem" onclick="loadviewpg('732DA',1)">Shaurya 732 (9HP)</li>
+                        <li class="dditem" onclick="loadviewpg('732P',1)">Shaurya 732 (Petrol)</li>
+                        <li class="dditem" onclick="loadviewpg('D531RTF',1)">D-531RT-F</li>
+                        <li class="dditem" onclick="loadviewpg('D531RT',1)">D-531RT</li>
+                        <li class="dditem" onclick="loadviewpg('D531E',1)">D-531E</li>
+                        <li class="dditem" onclick="loadviewpg('D531M',1)">D-531M</li>
+                        <li class="dditem" onclick="loadviewpg('D105',1)">D-105</li>
+                        <li class="dditem" onclick="loadviewpg('D90',1)">D-90</li>
+                        <li class="dditem" onclick="loadviewpg('G105',1)">G-105</li>
+                        <li class="dditem" onclick="loadviewpg('G500',1)">G-500</li>
+                        <li class="dditem" onclick="loadviewpg('Taro',1)">Taro Reaper</li>
+                        <li class="dditem" onclick="loadviewpg('Shakti',1)">Shakti</li>
+                    </ul>
+                </li>
+                <li class="navitem">Accessories ˅
+                    <ul class="ddlist">
+                        <li class="dditem" onclick="loadviewpg('Pass',2)">Pass</li>
+                        <li class="dditem" onclick="loadviewpg('Ridger',2)">Ridger</li>
+                        <li class="dditem" onclick="loadviewpg('Plough',2)">Plough</li>
+                        <li class="dditem" onclick="loadviewpg('SeedDrill',2)">Seed Drill</li>
+                        <li class="dditem" onclick="loadviewpg('HTP',2)">HTP Spray</li>
+                        <li class="dditem" onclick="loadviewpg('Pump',2)">Water Pump</li>
+                        <li class="dditem" onclick="loadviewpg('Trolley',2)">Trolley</li>
+                        <li class="dditem" onclick="loadviewpg('Seat',2)">Seat</li>
+                        <li class="dditem" onclick="loadviewpg('Reaper',2)">Reaper</li>
+                    </ul>
+                </li>
+                <li class="navitem">Agri Tools ˅
+                    <ul class="ddlist">
+                        <li class="dditem" onclick="loadlistpg('tool',3),visit('#BC')">BrushCutters</li>
+                        <li class="dditem" onclick="loadlistpg('tool',3),visit('#BCA')">BrushCutter Attachments</li>
+                        <li class="dditem" onclick="loadlistpg('tool',3),visit('#EA')">Earth Augers</li>
+                        <li class="dditem" onclick="loadlistpg('tool',3),visit('#OM')">Other Machineries</li>
+                    </ul>
+                </li>
+                <li class="navitem">Spare Parts ˅
+                    <ul class="ddlist">
+                        <li class="dditem" onclick="loadsparepg()">Engine Spares</li>
+                        <li class="dditem" onclick="loadsparepg()">Gear Box Spares</li>
+                        <li class="dditem" onclick="loadsparepg()">Other Spares</li>
+                    </ul>
+                </li>
+                <li class="navitem" onclick="loadservicepg()">Services</li>
+                <li class="navitem" onclick="loaddownloadpg('install')">Download App</li>
+            </ul>
+        </nav>
+    </header>
+    <main id="display" onclick="collapsedropdown()">
+        <data>
+            
+        </data>
+    </main>
+    <footer>
+        <div class="flex">
+            <div class="footdata">
+                <p class="foothead">Our Offices</p>
+                <!-- tirthpuri office -->
+                <p class="secfoothead" onclick="visit('https://maps.app.goo.gl/eurNaiytF4mubfsJ8')">Shree Swami Samarth
+                    Agro Agency</p>
+                <p class="footdesc">Near Canal Bridge, Ambad Road, Tirthpuri Tq. Ghansawangi Dist. Jalna</p>
+                <p class="contact">8999609749, 8999698156</p>
+                <!-- Ambad office --> <br>
+                <p class="secfoothead" onclick="visit('https://maps.app.goo.gl/z4eupcB4Gz7AYodWA')">Samarth Agro
+                    Machineries And Rotary Tillers Hub</p>
+                <p class="footdesc">Ghansawangi T-Point, Ambad Dist. Jalna</p>
+                <p class="contact">9921578183, 9403302577</p>
+            </div>
+            <div class="footdata">
+                <p class="foothead">Our Products</p>
+                <ul class="footdescUl">
+                    <li onclick="loadlistpg('weeder',1)">Power Weeders</li>
+                    <li onclick="loadlistpg('tiller',1)">Power Tillers</li>
+                    <li onclick="loadlistpg('attachment',2)">Weeder Attachments</li>
+                    <li onclick="loadlistpg('tool',3)">Agricultural Machinery</li>
+                    <li onclick="loadsparepg()">Spare Parts</li>
+                </ul>
+            </div>
+            <div class="footdata">
+                <p class="foothead">Quick Links</p>
+                <ul class="footdescUl">
+                    <li onclick="loadofferpg()">New Offers</li>
+                    <li onclick="loaduspg('about')">About Us</li>
+                    <li onclick="loaduspg('contact')">Contact Us</li>
+                </ul>
+            </div>
+            <div class="footdata center">
+                <p class="foothead">Apply For Sub-dealership</p>
+                <select name="taluka" id="taluka" placeholder="Taluka" class="dealership">
+                    <option value="none">Select Taluka</option>
+                    <option value="Jalna">Jalna</option>
+                    <option value="Ambad">Ambad</option>
+                    <option value="Bhokardan">Bhokardan</option>
+                    <option value="Badnapur">Badnapur</option>
+                    <option value="Ghansavangi">Ghansavangi</option>
+                    <option value="Partur">Partur</option>
+                    <option value="Mantha">Mantha</option>
+                    <option value="Jafrabad">Jafrabad</option>
+                </select><br>
+                <input type="text" id="region" placeholder="Enter Shop Location" class="dealership"><br>
+                <input type="text" id="name" placeholder="Enter Your Name" class="dealership"><br>
+                <button onclick="dealer()">Send</button>
+            </div>
+        </div>
+        <div>&copy Prashant Shinde 2024</div>
+    </footer>
+</body>
+<script>
+
+</script>
+
+</html>
